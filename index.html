@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>State of the Art</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  </head>
+
+  <body>
+    <div id="content">
+      <header>
+        <div id="headerid"></div>
+        <!-- loads header.html as the #headerid for reuse-->
+        <script>
+          $("#headerid").load("header.html");
+        </script>
+      </header>
+
+      <main>
+        <div class="banner-box"></div>
+
+        <div class="grid-area-1 gridclass lightergreenbox">
+          <h2>Our Purpose</h2>
+          <p>
+            On this site you get to explore the world of procedural art, and
+            create some awesome stuff to show your friends! Our goal is to
+            inspire people to enhance their creativity with technology.
+          </p>
+        </div>
+
+        <div class="grid-area-2 gridclass">
+          <img
+            src="images/pendulumgif.gif"
+            alt="pendulum generated art gif animation"
+            height="250"
+            style="border-radius: 10px"
+          />
+
+          <div class="grid-area-2-questionbox gridclass">
+            <h2>What is procedural art?</h2>
+            <h5>
+              ( Also called <strong>Generative Art</strong> or
+              <strong>Dynamic Drawing</strong> )
+            </h5>
+          </div>
+
+          <p>
+            In this age of technology, there are more tools than ever before to
+            help us make <strong>super-cool</strong> art! <br /><br />
+            Procedural art is an amazing way to create complex looking designs
+            and images using computers. These computer programs can generate
+            mind-blowing images without too much effort.
+          </p>
+        </div>
+
+        <div class="grid-area-example-image gridclass">
+          <div>
+            <h2>Here is an example:</h2>
+            <p>
+              This image was made using a
+              <a href="https://en.wikipedia.org/wiki/Mandelbrot_set">
+                mandelbrot</a
+              >
+              fractal generator.
+            </p>
+          </div>
+
+          <img
+            src="images/mandelbrot2.webp"
+            alt="mandelbrot image"
+            style="border-radius: 10px"
+          />
+        </div>
+
+        <div class="lightergreenbox">
+          <h2>Why should you learn more about procedural art?</h2>
+          <p>
+            If you're an artist in today's world, then using technology to
+            enhance your art is pretty typical. There are certain advantages
+            that using computers gives to artists that would not be possible any
+            other way.
+          </p>
+        </div>
+
+        <h4 class="top-margin-title">
+          For instance, can you imagine drawing this by hand?
+        </h4>
+        <div class="grid-area-example-image-2 gridclass">
+          <img
+            src="images/spikethingyd4.webp"
+            alt="crazy procedural art drawing"
+            style="border-radius: 10px"
+          />
+          <p class="green-paragraph">
+            It would take forever to do all those precise measurements! <br />
+            <br />
+            On the other hand, a computer can render such a drawing in a matter
+            of seconds
+          </p>
+        </div>
+
+        <div class="interactive-examples">
+          <div class="unskew">
+            <h2>Interactive Examples</h2>
+
+            <p>Let's try a couple things..</p>
+
+            <div class="interactive-example-1">
+              <canvas
+                onmousedown="mousePress(event)"
+                onmouseup="mouseRelease(event)"
+                onmouseleave="mouseLeave()"
+                id="myCanvas"
+                width="500"
+                height="500"
+              >
+                Your browser does not support the HTML canvas tag.
+              </canvas>
+              <h3>Click and drag anywhere inside the box.</h3>
+            </div>
+
+            <div class="interactive-example-2 gridclass">
+              <div>
+                <ul>
+                  <li>
+                    <h3>Set parameters then click go.</h3>
+                  </li>
+                  <li>
+                    <label for="oval">Oval Height</label>
+                    <input
+                      id="oval"
+                      type="range"
+                      class="slider"
+                      onchange="sliderChange(this.id)"
+                      min="1"
+                      max="100"
+                      value="50"
+                      oninput="this.nextElementSibling.value = this.value"
+                    />
+                    <output>50</output>
+                  </li>
+                  <li>
+                    <label for="spin">Spin Amount</label>
+                    <input
+                      id="spin"
+                      type="range"
+                      class="slider"
+                      onchange="sliderChange(this.id)"
+                      min="-50"
+                      max="50"
+                      value="20"
+                      oninput="this.nextElementSibling.value = this.value"
+                    />
+                    <output>0</output>
+                  </li>
+                  <li>
+                    <label for="spiral">Spiral Amount</label>
+                    <input
+                      id="spiral"
+                      type="range"
+                      class="slider"
+                      onchange="sliderChange(this.id)"
+                      min="1"
+                      max="130"
+                      value="20"
+                      oninput="this.nextElementSibling.value = this.value"
+                    />
+                    <output>50</output>
+                  </li>
+                  <li>
+                    <button onclick="startPainting()" style="width: 80px">
+                      GO!
+                    </button>
+                  </li>
+                </ul>
+              </div>
+
+              <canvas id="exm2Canvas" width="500" height="500">
+                Your browser does not support the HTML canvas tag.
+              </canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="resources-link">
+          <h3>
+            Check out the <a href="resources.html">resources page</a> to learn
+            more!
+          </h3>
+        </div>
+      </main>
+
+      <footer class="gridclass">
+        <div>
+          &copy; 2021 Kyle Coulon | This is a mock art education site for a
+          student project
+        </div>
+
+        <div class="social">
+          <a href="https://www.youtube.com/kylecoulon" target="_blank"
+            ><img src="images/youtube_logo.webp" alt="Youtube logo"
+          /></a>
+          <a href="https://www.facebook.com/kyle.coulon/" target="_blank"
+            ><img src="images/facebook_logo.webp" alt="Facebook logo"
+          /></a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/interact.js"></script>
+  </body>
+</html>

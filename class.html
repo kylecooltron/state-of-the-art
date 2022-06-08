@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>State of the Art</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  </head>
+
+  <body>
+    <div id="content">
+      <header>
+        <div id="headerid"></div>
+        <!-- loads header.html as the #headerid for reuse-->
+        <script>
+          $("#headerid").load("/header.html");
+        </script>
+      </header>
+
+      <main>
+        <div class="banner-box"></div>
+
+        <div class="resources-title-grid gridclass">
+          <h2>Creativity Workshops</h2>
+          <p class="greenparagraph">
+            Explore Procedural Art, Animation, 3D Modeling, and More!
+          </p>
+        </div>
+
+        <div class="opening-class-box lightergreenbox">
+          <p>
+            We offer summer reativity workshops online, to help people learn how
+            to create amazing generated art using the computer! Using special
+            technology allows us to express ourselves in different ways. Using
+            games and interactive classroom projects we help people to discover
+            the world of technology. This course is available for all ages. The
+            course includes two, one hour workshops and a class project in
+            between. A desktop computer with internet access and ability to use
+            <a href="https://www.google.com/chrome/"> Google Chrome</a> browser
+            is required.
+          </p>
+        </div>
+
+        <div class="sign-up-grid">
+          <div class="sign-up-image-box">
+            <h2>Sign-up page</h2>
+            <img
+              src="images/cooldesign3.webp"
+              alt="mandelbrot image"
+              style="border: 5px solid #495e36"
+            />
+          </div>
+
+          <div>
+            <form class="sign-up-form-box lightergreenbox">
+              <div class="form-first-name">
+                <label for="fname">First name</label><br />
+                <input type="text" id="fname" name="fname" value="John" /><br />
+              </div>
+              <div class="form-last-name">
+                <label for="lname">Last name</label><br />
+                <input type="text" id="lname" name="lname" value="Doe" /><br />
+              </div>
+              <div class="form-email">
+                <label for="email">Email address</label><br />
+                <input type="text" id="email" name="email" value="" /><br />
+              </div>
+
+              <div class="form-age">
+                <label for="age"> Age</label><br />
+                <input type="text" id="age" name="age" value="" />
+              </div>
+
+              <div class="form-class-selection">
+                <label>Class selection</label><br />
+                <div class="in-line-radios">
+                  <div>
+                    <input
+                      type="radio"
+                      name="class_selection"
+                      id="procedural"
+                    />
+                    <label for="procedural">Procedural</label><br />
+                  </div>
+                  <div>
+                    <input type="radio" name="class_selection" id="animation" />
+                    <label for="animation">Animation</label><br />
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      name="class_selection"
+                      id="3Dmodeling"
+                    />
+                    <label for="3Dmodeling">3D Modeling</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-special-notes">
+                <label for="special-notes">Special notes</label><br />
+                <input
+                  type="text"
+                  id="special-notes"
+                  name="special-notes"
+                  value=""
+                  style="width: 420px; height: 70px; margin-top: 10px"
+                /><br />
+
+                <br />
+              </div>
+              <div class="form-submit-button">
+                <button type="submit" value="Submit" onclick="startPainting()">
+                  Submit!
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="inspiration-box">
+          <h3>Get ready to have fun!</h3>
+          <p class="whiteparagraph">
+            We look forward to helping you learn to use
+            <strong>State of the art</strong> technology to make mind-blowing
+            art!
+          </p>
+        </div>
+      </main>
+
+      <footer class="gridclass">
+        <div>
+          &copy; 2021 Kyle Coulon | This is a mock art education site for a
+          student project
+        </div>
+
+        <div class="social">
+          <a href="https://www.youtube.com/kylecoulon" target="_blank"
+            ><img src="images/youtube_logo.webp" alt="Youtube logo"
+          /></a>
+          <a href="https://www.facebook.com/kyle.coulon/" target="_blank"
+            ><img src="images/facebook_logo.webp" alt="Facebook logo"
+          /></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>State of the Art</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  </head>
+
+  <body>
+    <div id="content">
+      <header>
+        <div id="headerid"></div>
+        <!-- loads header.html as the #headerid for reuse-->
+        <script>
+          $("#headerid").load("/header.html");
+        </script>
+      </header>
+
+      <main>
+        <div class="banner-box-2"></div>
+
+        <div class="resources-title-grid gridclass">
+          <h2>Resources</h2>
+          <p>
+            There are many resources available to help people get started
+            learning about procedural art. Here is a list of a few really cool
+            websites:
+          </p>
+        </div>
+
+        <div class="resources-grid gridclass">
+          <ul>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Generative_art"
+                >Wikepedia "Generative art"</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/watch?v=qtPi0JvmWbs&ab_channel=HaoHua"
+                >Youtube Video "How to Make Generative Art for Designers"</a
+              >
+            </li>
+            <li>
+              <a href="https://aiartists.org/generative-art-design"
+                >AIArtists.org</a
+              >
+            </li>
+
+            <li>
+              <a href="http://haxiomic.github.io/GPU-Fluid-Experiments/html5/"
+                >GPU Fluid (online art generator)</a
+              >
+            </li>
+            <li>
+              <a href="http://weavesilk.com/">Silk (online art generator)</a>
+            </li>
+          </ul>
+
+          <div class="grid-area-2-questionbox jright gridclass">
+            <h2>What is procedural art?</h2>
+            <h5>
+              👈 Check out these <strong>websites</strong>to learn more and
+              expirement.
+            </h5>
+          </div>
+        </div>
+
+        <div class="center">
+          <h2>Online interactive examples</h2>
+        </div>
+
+        <div class="online-interactive-examples-grid gridclass">
+          <div>
+            <a class="resource-weblink" href="http://usefuljs.net/fractals/"
+              >Online Fractal Generator</a
+            >
+            <a class="resource-weblink" href="http://usefuljs.net/fractals/">
+              <img
+                class="examp-web-img"
+                src="images/novaexample.webp"
+                alt="mandelbrot website image"
+              />
+            </a>
+          </div>
+
+          <div>
+            <a class="resource-weblink" href="https://toytheater.com/twirl/"
+              >Fun procedural art games</a
+            >
+            <a class="resource-weblink" href="https://toytheater.com/twirl/">
+              <img
+                class="examp-web-img"
+                src="images/gamesexample.webp"
+                alt="games website image"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="software-grid gridclass"></div>
+
+        <h2>Software</h2>
+        <p class="greenparagraph">
+          There are also some free programs that can be used to make procedural
+          art.
+        </p>
+
+        <div class="procedural-modeling-example-box gridclass">
+          <p>
+            <a href="https://www.blender.org/" style="font-size: 2em"
+              >Blender</a
+            >
+            <br />
+            <br />
+            ..is a wonderful open source software that allows you to do
+            procedural modeling in 3D!
+            <br />
+            <br />
+            <small>
+              Here is a
+              <a
+                href="https://www.youtube.com/watch?v=pAay5JI6dEM&ab_channel=CGCookie"
+                >link</a
+              >
+              to a youtube tutorial series.
+            </small>
+          </p>
+
+          <div class="anim-box-container" id="animbox"></div>
+          <div class="anim-box-input-box">
+            <input
+              type="range"
+              class="slider"
+              oninput="updateAnimbox(this.value);"
+              min="0"
+              max="15"
+              value="1"
+            />
+            👆 Try me!
+          </div>
+        </div>
+
+        <div class="inspiration-box">
+          <p>Last, but not least..</p>
+          <h3>Find your own way to make procedural art!</h3>
+
+          <p class="greenparagraph">
+            There are so many wonderful tools that we have available to us in
+            today's world that can help us be creative.
+          </p>
+          <p class="whiteparagraph">The possibilities are endless.</p>
+        </div>
+
+        <div class="resources-link greenback">
+          <h3>
+            Join our <a href="class.html">online class</a> to take your art to
+            the next level!
+          </h3>
+        </div>
+      </main>
+
+      <footer class="gridclass">
+        <div>
+          &copy; 2021 Kyle Coulon | This is a mock art education site for a
+          student project
+        </div>
+
+        <div class="social">
+          <a href="https://www.youtube.com/kylecoulon" target="_blank"
+            ><img src="images/youtube_logo.webp" alt="Youtube logo"
+          /></a>
+          <a href="https://www.facebook.com/kyle.coulon/" target="_blank"
+            ><img src="images/facebook_logo.webp" alt="Facebook logo"
+          /></a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/interact.js"></script>
+  </body>
+</html>
